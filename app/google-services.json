@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1092742944391",
+    "project_id": "anonymouschat-5a876",
+    "storage_bucket": "anonymouschat-5a876.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1092742944391:android:1f4a968580f111bf55ca22",
+        "android_client_info": {
+          "package_name": "com.example.anonymouschat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCd0JADtCHdrBYrvU30r5sD5kdgb4EZtQo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

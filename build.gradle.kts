@@ -1,30 +1,13 @@
 buildscript {
     dependencies {
-        classpath(libs.kotlin.gradle.plugin)
-    }
-}
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
+        classpath("com.google.gms:google-services:4.3.10") // Firebase 설정
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:1.8.20") // Kotlin Gradle Plugin
     }
 }
 
-dependencyResolutionManagement {
+allprojects {
     repositories {
         google()
         mavenCentral()
     }
-}
-
-rootProject.name = "AnonymousChat"
-include(":app")
-
-// ✅ Java & Kotlin JVM 버전 일치시키기
-val jvmTargetVersion = "17"  // 또는 11 사용 가능
-
-tasks.withType<JavaCompile> {
-    sourceCompatibility = jvmTargetVersion
-    targetCompatibility = jvmTargetVersion
 }

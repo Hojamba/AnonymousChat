@@ -15,3 +15,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "AnonymousChat"
 include(":app")
+include(":app-1")

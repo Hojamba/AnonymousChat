@@ -12,3 +12,6 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
+
+rootProject.name = "AnonymousChat"
+include(":app")

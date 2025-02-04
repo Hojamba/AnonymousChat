@@ -1,12 +1,25 @@
-// Top-level build file where you can add configuration options common to all sub-projects/modules.
-
-plugins {
-    alias(libs.plugins.android.application) apply false
-    alias(libs.plugins.kotlin.android) apply false
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
 }
 
-buildscript {
-    dependencies {
-        classpath("com.google.gms:google-services:4.3.10") // Firebase 설정 추가
+dependencyResolutionManagement {
+    repositories {
+        google()
+        mavenCentral()
     }
+}
+
+rootProject.name = "AnonymousChat"
+include(":app")
+
+// ✅ Java & Kotlin JVM 버전 일치시키기
+val jvmTargetVersion = "17"  // 또는 11 사용 가능
+
+tasks.withType<JavaCompile> {
+    sourceCompatibility = jvmTargetVersion
+    targetCompatibility = jvmTargetVersion
 }
